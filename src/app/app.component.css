@@ -1,0 +1,4 @@
+#navbarNav > ul > li:nth-child(n) > a
+{
+    color: black;
+}

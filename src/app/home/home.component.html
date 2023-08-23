@@ -1,0 +1,38 @@
+<ngb-carousel>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img src="../../assets/images/img1.jpg" alt="Random first slide" />
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img src="../../assets/images/img2.jpg" alt="Random second slide" />
+        </div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img src="../../assets/images/img3.jpg" alt="Random third slide" />
+		</div>
+	</ng-template>
+</ngb-carousel>
+
+<div class="container">
+    <table class="table mt-5 text-center">
+      <thead>
+        <tr class="table-dark">
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Adress</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of collection">
+          <th scope="row">{{item.id}}</th>
+          <td>{{item.name}}</td>
+          <td>{{item.adress}}</td>
+          <td>{{item.email}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

@@ -1,0 +1,32 @@
+<div class="heading mt-5">
+    <h1><span> Edit</span> Restaurant</h1>
+</div>
+
+<div *ngIf="alert" class="mt-5 alert alert-success alert-dismissible fade show container" role="alert">
+    <strong>Success!</strong> Your Data has been Updated
+    <button type="button" (click)="updateAlert()" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+<div class="main-form">
+<form [formGroup]="editResto" (ngSubmit)="collection()">
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Restaurent Name</label>
+        <input type="text" class="form-control" formControlName="name" placeholder="Restaurent Name">
+        <span class="text-danger" *ngIf="name && name.invalid && name.touched">This Feild is Invalid</span>
+      </div>
+
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Email</label>
+        <input type="email" class="form-control" formControlName="email" placeholder="Enter Email">
+        <span class="text-danger" *ngIf="email && email.invalid && email.touched">This Feild is Invalid</span>
+      </div>
+
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Address</label>
+        <input type="text" class="form-control" formControlName="adress" placeholder="Enter Your Adress">
+        <span class="text-danger" *ngIf="adress && adress.invalid && adress.touched">This Feild is Invalid</span>
+      </div>
+      <button type="submit" class="btn btn-primary">Update</button>
+</form>
+</div>
+ 

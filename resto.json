@@ -1,0 +1,34 @@
+{
+  "restaurents": [
+    {
+      "name": "Chick Chika Chick",
+      "email": "chick@test.com",
+      "adress": "Indore",
+      "id": 1
+    },
+    {
+      "name": "Maya Home Restaurent",
+      "email": "maya@test.com",
+      "adress": "Vijay nagar, Indore",
+      "id": 2
+    },
+    {
+      "name": "King's Park Hotel & Resto",
+      "email": "king@test.com",
+      "adress": "Bhawarkua, Indore",
+      "id": 3
+    },
+    {
+      "name": "Utsav Hotel & Restaurant",
+      "email": "utsav@test.com",
+      "adress": "Rajendra Nagar",
+      "id": 4
+    },
+    {
+      "name": "Patel Club & Resort",
+      "email": "pcr@test.com",
+      "adress": "Indore Rajendra Nagar",
+      "id": 5
+    }
+  ]
+}

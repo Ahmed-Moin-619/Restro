@@ -1,0 +1,29 @@
+
+.heading h1
+{
+    text-align: center;
+}
+.main-form
+{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.main-form input
+{
+    width: 500px;
+}
+.alert
+{
+    width: 500px;
+}
+/* span{
+    background-color: #ffcf00;
+    color: white;
+    padding: 0px 10px;
+} */
+.btn
+{
+    margin-left: 10px !important;
+}
